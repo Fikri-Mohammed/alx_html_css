@@ -1,1 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a464ea; /* Adjusted to match the purple background */
+}
 
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #cfa9f0; /* Slightly lighter purple background for content */
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-content {
+    max-width: 500px;
+}
+
+.quote {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+.person-name {
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.person-title {
+    font-style: italic;
+    color: #e0e0e0;
+    margin: 0;
+}

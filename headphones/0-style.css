@@ -1,91 +1,55 @@
-/* General body styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
 }
 
-/* Navbar styling: aligned to the top-left for logo and top-right for links */
 .navbar {
     display: flex;
-    justify-content: flex-start; /* Aligns items to the left */
+    justify-content: space-between;
     align-items: center;
     background-color: red;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px; /* Space between links */
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .logo {
-    margin-right: auto; /* Keeps logo on the left */
-  }
-  
+    padding: 10px 20px;
+}
 
 .logo img {
-    width: 20px;
+    width: 150px;
     height: auto;
 }
 
-/* Navigation links - moved to the right */
-ul {
-    list-style: none;
+nav ul {
+    list-style-type: none;
     display: flex;
-    margin: 100;
+    margin: 0;
     padding: 0;
-    
-    
-}
 }
 
-.navbar {
-  display: inline-block;
+nav ul li {
+    margin-right: 20px;
 }
 
-ul li {
-    margin-right: 100px;
-    top: 100px;
-}
-
-ul li a {
-    color: white; /* Default color */
+nav ul li a {
+    color: white;
     text-decoration: none;
     font-size: 16px;
+    font-weight: bold;
     transition: color 0.3s ease;
-    
 }
 
-/* Hover effect for links */
-ul li a:hover {
-    color: red;
+nav ul li a:hover {
+    color: yellow;
 }
 
-/* Main body section with background image */
 .main-body {
-    background-image: url('1.jpg'); /* Replace with your background image */
+    background-image: url('1.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
 }
 
 .main-body .content h1 {
@@ -98,7 +62,6 @@ ul li a:hover {
     margin-bottom: 30px;
 }
 
-/* Call to Action button */
 .cta-button {
     display: inline-block;
     padding: 15px 30px;
@@ -114,9 +77,35 @@ ul li a:hover {
     background-color: #d40812;
 }
 
-/* Description text styling */
 .description {
     margin-top: 20px;
     max-width: 600px;
     font-size: 1rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .main-body .content h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
 }

@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .logo {
+    margin-right: auto;
+}
+
+/* Main body section */
+.main-body {
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+/* Section titles */
+h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Icons in the 'What we do' section */
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-item {
+    text-align: center;
+    margin: 0 15px;
+}
+
+.icon-item i {
+    font-size: 2rem;
+    color: #e50914;
+}
+
+/* Our results section */
+.results-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result-item .hexagon {
+    background-color: #e50914;
+    color: white;
+    padding: 20px;
+    margin: 0 15px;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    text-align: center;
+}
+
+/* Contact form */
+.contact-form {
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* CSS Animation for showing elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation on load */
+.main-body,
+.what-we-do,
+.our-results,
+.contact-form,
+.footer {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Hide elements by default */
+.what-we-do,
+.our-results,
+.contact-form,
+.footer {
+    opacity: 0; /* Start hidden */
+}

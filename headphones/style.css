@@ -1,0 +1,122 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Navbar styling: aligned to the top-left for logo and top-right for links */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    background-color: red;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px; /* Space between links */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .logo {
+    margin-right: auto; /* Keeps logo on the left */
+  }
+  
+
+.logo img {
+    width: 20px;
+    height: auto;
+}
+
+/* Navigation links - moved to the right */
+ul {
+    list-style: none;
+    display: flex;
+    margin: 100;
+    padding: 0;
+    
+    
+}
+}
+
+.navbar {
+  display: inline-block;
+}
+
+ul li {
+    margin-right: 100px;
+    top: 100px;
+}
+
+ul li a {
+    color: white; /* Default color */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    
+}
+
+/* Hover effect for links */
+ul li a:hover {
+    color: red;
+}
+
+/* Main body section with background image */
+.main-body {
+    background-image: url('1.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.main-body .content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.main-body .content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Call to Action button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d40812;
+}
+
+/* Description text styling */
+.description {
+    margin-top: 20px;
+    max-width: 600px;
+    font-size: 1rem;
+}
